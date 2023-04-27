@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Uzumaki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/free-icon-ramen-6632379.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(255, 162, 105);
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+            padding: 0px;
+        }
+
+        header img {
+            width: 300%;
+            height: 300px;
+            margin-right: 0px;
+
+        }
+
+        .logo {
+            font-size: 94px;
+            font-weight: lighter;
+            color: #c66906;
+            -webkit-text-stroke: 2px white;
+
+        }
+
+
+
+        nav {
+
+            text-align: center;
+
+
+
+        }
+
+        nav ul {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 50px;
+            gap: 30px;
+            padding: 0;
+            list-style: none;
+            justify-content: center;
+        }
+
+        nav li {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        nav li:hover {
+            background-color: #ed5a24;
+        }
+
+        nav li:hover a {
+            color: #050505;
+        }
+
+        nav li:nth-child(1) {
+            grid-column: 1 / 2;
+            justify-content: center;
+        }
+
+        nav li:nth-child(2) {
+            grid-column: 2 / 3;
+        }
+
+        nav li:nth-child(3) {
+            grid-column: 3 / 4;
+        }
+
+        nav li:nth-child(4) {
+            grid-column: 4/5;
+        }
+
+        nav li:nth-child(5) {
+            grid-column: 5/5;
+            justify-content: center;
+        }
+
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+
+        .popular-recipes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            grid-gap: 10px;
+        }
+
+        .recipe-card1 {
+            grid-column-start: 1;
+        }
+
+        .order-btn1 {
+            background-color: #837df9;
+            color: rgb(252, 251, 250);
+            border: none;
+            padding: 10px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .order-btn1:hover {
+            background-color: #f37290;
+        }
+
+        .recipe-card2 {
+            grid-column-end: 7;
+        }
+
+        .order-btn2 {
+            background-color: #837df9;
+            color: rgb(252, 251, 250);
+            border: none;
+            padding: 10px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .order-btn2:hover {
+            background-color: #f37290;
+        }
+
+        .recipe-card {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+            margin-right: 50%;
+        }
+
+        .order-btn {
+            background-color: #837df9;
+            color: rgb(252, 251, 250);
+            border: none;
+            padding: 10px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .order-btn:hover {
+            background-color: #f37290;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            height: 130px;
+        }
+
+        .social-icons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            gap: 10px;
+        }
+
+        .instagram-logo {
+            max-width: 50px;
+            height: auto;
+        }
+
+        .tiktok-logo {
+            max-width: 50px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/header.jpg" alt="logotype">
+        <div class="logo">Uzumaki</div>
+        <nav>
+            <ul>
+                <li><a href="#">Ramen</a></li>
+                <li><a href="#">location</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Drinks</a></li>
+                <li><a href="#">noodles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="popular-recipes">
+            <h2>Popular ramen</h2>
+
+            </div>
+            <div class="recipe-card1">
+                <img src="https://images.getrecipekit.com/20210930182508-untitled-design-33.jpg?width=650&quality=90&"
+                    alt="ramen" width="500">
+                <p>
+                    Shoyu Broth
+                    Shoyu broth is a beautiful thing. The tare (seasoning) of the soy sauce is what truly defines a bowl
+                    of Shoyu but there are other moving parts that go into the broth and make it what it is. Usually, a
+                    Shoyu broth will be crafted from boiling down pork bones and chicken bones for hours. Of course,
+                    most people don’t have time to linger over a boiling pan of bones for hours so there are some
+                    shortcuts. Chicken broth, dashi, and other seasonings like ginger and garlic along with dried
+                    sardines and kombu (seaweed) can all bring that much-needed layering and complex flavoring to your
+                    Shoyu dish.
+                </p>
+                <button class="order-btn1">Order</button>
+            </div>
+            <div class="recipe-card">
+
+                <img src="img/Hakodate ramen.png" alt="описание блюда" width="500">
+                <p style="width: 400px; word-wrap: break-word">The broth of Hakodate ramen is generally quite clear,
+                    especially when compared to
+                    the milky Hakata ramen. It is known for being less fatty than its cousins in Sapporo and
+                    Asahikawa.</p>
+                <button class="order-btn">Order</button>
+            </div>
+            <div class="recipe-card"><img src="img/Food image.png" alt="описание блюда" width="500">
+                <p style="width: 500px; word-wrap: break-word">
+                    Miso Ramen is Ramen noodles in a Miso based soup that was created in Japan in the
+                    1960s. Ramen noodles are originally Chinese style noodles, but it’s been changed and
+                    improved over the years, and evolved to be our own food.
+                </p>
+                <button class="order-btn">Order</button>
+            </div>
+            <div class="recipe-card">
+                <img src="img/Food image (1).png" alt="описание блюда" width="500">
+                <p style="width: 500px; word-wrap: break-word"> It is rice and fillings wrapped in dried,
+                    roasted seaweed (nori), and then sliced into smaller bite-sized pieces.</p>
+                <button class="order-btn">Order</button>
+            </div>
+            <div class="recipe-card"><img src="img/Food imagesushi.png" alt="описание блюда" width="500">
+                <p style="width: 500px; word-wrap: break-word">Description: it is a type of sushi in which
+                    the sushi rice and sushi seeds are wraps with Kumazasa or bamboo leaves.</p>
+                <button class="order-btn">Order</button>
+            </div>
+            <div class="recipe-card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/190208-ramen-horizontal-063-1550014435.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                    alt="описание блюда" width="500">
+                <p style="width: 500px; word-wrap: break-word">
+                    Shoyu: Japanese soy sauce is a popular ramen seasoning in the Kanto region of central Japan,
+                    originally emanating from Yokohama. Traditionally it's paired with clear to brown chicken,
+                    seafood,
+                    and occasionally pork or beef-based broths, though these days shoyu is used willy-nilly by ramen
+                    chefs throughout Japan.
+                </p>
+                <button class="order-btn">Order</button>
+            </div>
+            <div class="recipe-card1">
+                <img src="https://99px.ru/sstorage/86/2020/12/image_862812200007561448650.gif" alt="gif блюда">
+                <p>
+                    It's Ramen Time!
+                    There are four main different types of ramen; Miso, Tonkotsu, Shio, and Shoyu. This mainly refers to
+                    the tare that has been used to season and bring flavor to the ramen broth. While all ramen will have
+                    a broth that is usually made from chicken or pork bones, dashi or seafood, the addition of the tare
+                    will be what sets the ramen apart and which kind of flavors will be more predominant in the dish.
+                    While foundationally there are four different kinds of ramen, these are just the building blocks and
+                    there can be a ton of regional varieties under each of these banners. Here are the four main types
+                    of ramen you can find…
+                </p>
+                <button class="order-btn2">Contact us</button>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-icons"></div>
+        <div class="social-icons">
+            <ul>
+                <img src="img/instagram-logo.png" alt="instagram-logo" class="instagram-logo">
+            </ul>
+            <ul><img src="img/tiktok.png" alt="tiktok-logo" class="tiktok-logo"></ul>
+        </div>
+
+        <div class="footer-content">Uzumaki &copy; 2023</div>
+    </footer>
+</body>
+
+</html>
